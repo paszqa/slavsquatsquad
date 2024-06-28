@@ -8,24 +8,42 @@
 </head>
 <body>
     <div class="menu">
-        <button onclick="showDiv('home')">Home</button>
-        <button onclick="showDiv('about')">About</button>
-        <button onclick="showDiv('contact')">Contact</button>
+        <button onclick="showDiv('fresh-releases')">Fresh releases</button>
+        <button onclick="showDiv('upcoming')">Upcoming</button>
+        <button onclick="showDiv('update-tracker')">Update tracker</button>
+        <button onclick="showDiv('user-activity')">User activity</button>
+        <button onclick="showDiv('top-list')">Top list</button>
+        <button onclick="showDiv('recap')">2023 Recap</button>
     </div>
     
-    <div id="home" class="content">
-        <h1>Home</h1>
-        <p>Welcome to the home page.</p>
+    <div id="fresh-releases" class="content">
+        <h1>Fresh Releases</h1>
+        <div id="fresh-releases-table"></div>
     </div>
     
-    <div id="about" class="content" style="display:none;">
-        <h1>About</h1>
-        <p>This is the about page.</p>
+    <div id="upcoming" class="content" style="display:none;">
+        <h1>Upcoming</h1>
+        <div id="upcoming-table"></div>
     </div>
     
-    <div id="contact" class="content" style="display:none;">
-        <h1>Contact</h1>
-        <p>This is the contact page.</p>
+    <div id="update-tracker" class="content" style="display:none;">
+        <h1>Update Tracker</h1>
+        <p>Placeholder for update tracker</p>
+    </div>
+    
+    <div id="user-activity" class="content" style="display:none;">
+        <h1>User Activity</h1>
+        <img src="data/activity.png" alt="User Activity">
+    </div>
+    
+    <div id="top-list" class="content" style="display:none;">
+        <h1>Top List</h1>
+        <p>Placeholder for top list</p>
+    </div>
+    
+    <div id="recap" class="content" style="display:none;">
+        <h1>2023 Recap</h1>
+        <p>Placeholder for 2023 recap</p>
     </div>
     
     <script src="script.js"></script>

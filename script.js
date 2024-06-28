@@ -10,9 +10,9 @@ function showDiv(divId) {
     
     // Load CSV data for the fresh releases or upcoming sections
     if (divId === 'fresh-releases') {
-        loadCSVData('data/new-eng.csv', 'fresh-releases-table');
+        loadCSVData('https://raw.githubusercontent.com/paszqa/slavsquatsquad/main/data/new-eng.csv', 'fresh-releases-table');
     } else if (divId === 'upcoming') {
-        loadCSVData('data/month-eng.csv', 'upcoming-table');
+        loadCSVData('https://raw.githubusercontent.com/paszqa/slavsquatsquad/main/data/month-eng.csv', 'upcoming-table');
     }
 }
 

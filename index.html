@@ -1,1 +1,33 @@
-123
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <button onclick="showDiv('home')">Home</button>
+        <button onclick="showDiv('about')">About</button>
+        <button onclick="showDiv('contact')">Contact</button>
+    </div>
+    
+    <div id="home" class="content">
+        <h1>Home</h1>
+        <p>Welcome to the home page.</p>
+    </div>
+    
+    <div id="about" class="content" style="display:none;">
+        <h1>About</h1>
+        <p>This is the about page.</p>
+    </div>
+    
+    <div id="contact" class="content" style="display:none;">
+        <h1>Contact</h1>
+        <p>This is the contact page.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

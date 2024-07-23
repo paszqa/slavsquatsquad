@@ -25,7 +25,7 @@ function loadCSVData(filePath, tableId) {
             let tableHTML = '<table><tr>';
             
             // Split the first row (header)
-            const headers = rows[0].split(',');
+            const headers = rows[0].split(';');
             headers.forEach(header => {
                 tableHTML += `<th>${header.trim()}</th>`;
             });
@@ -34,7 +34,7 @@ function loadCSVData(filePath, tableId) {
             // Split the remaining rows (data)
             for (let i = 1; i < rows.length; i++) {
                 if (rows[i].trim()) {
-                    const cells = rows[i].split(',');
+                    const cells = rows[i].split(';');
                     tableHTML += '<tr>';
                     cells.forEach(cell => {
                         tableHTML += `<td>${cell.trim()}</td>`;
